@@ -3,22 +3,10 @@ import { FaLock, FaUserAlt } from "react-icons/fa";
 
 const Login = () => {
     const [loginactive, setLoginActive] = useState(false);
-    // const [signupactive , setSignUpActive] = useState(false);
 
     const handleClick = () => {
         setLoginActive(!loginactive);
-        // setSignUpActive(!signupactive);
     }
-
-    // const handleTransitionEnd = () => {
-    //     if (active) {
-
-    //         setTimeout(() => {
-
-    //             onSwitchComponent();
-    //         }, 1000);
-    //     }
-    // };
 
     return (
         <div>
