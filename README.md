@@ -15,4 +15,10 @@ React.js: The frontend is built using React.js, a popular JavaScript library for
 CSS: Custom styling is applied using CSS to enhance the visual appeal of the pages.
 React Icons: Icons for the login and signup forms are imported from the React Icons library.
 
+### Contributing
+
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
+
+
+
 
