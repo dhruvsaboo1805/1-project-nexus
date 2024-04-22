@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaLock, FaUserAlt } from "react-icons/fa";
+import { FaLock, FaUser  } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Login = () => {
     const [loginactive, setLoginActive] = useState(false);
@@ -13,13 +14,13 @@ const Login = () => {
             <div className={loginactive ? 'cantainer active' : 'cantainer'}>
                 <div className="curved-shape"></div>
                 <div className="curved-shape2"></div>
-                <div className="form-box Login">
+                <div className="form-box Login media-login-action">
                     <h2 className='animation'>Login</h2>
-                    <form action="#">
+                    <form className = "media-form" action="#">
                         <div className="input-box animation">
                             <input type="text" required />
                             <label htmlFor="">Username</label>
-                            <FaUserAlt className='Login-icons' />
+                            <FaUser style={{ color: 'red' }} className='Login-icons' />
                         </div>
                         <div className="input-box animation">
                             <input type="text" required />
@@ -29,8 +30,9 @@ const Login = () => {
                         <div className="input-box animation">
                             <button className='btn' type="submit">Login</button>
                         </div>
-                        <div className="regi-link animation">
-                            <p>Don't have an account <a href="#" className={loginactive ? 'active' : 'SignUpLink'} onClick={handleClick} >Sign Up</a> </p>
+                        <div className="regi-link animation login-action">
+                            <p>Don't have an account? <br />
+                            <a href="#" className={loginactive ? 'active' : 'SignUpLink'} onClick={handleClick} >Sign Up</a> </p>
                         </div>
                     </form>
                 </div>
@@ -40,13 +42,18 @@ const Login = () => {
                 </div>
 
                 {/* sign up form */}
-                <div className="form-box Register">
+                <div className="form-box Register media-decoration">
                     <h2 className='animation'>Sign Up</h2>
-                    <form action="#">
+                    <form className = "media-form" action="#">
                         <div className="input-box animation">
                             <input type="text" required />
                             <label for="">Username</label>
-                            <FaUserAlt className='Login-icons' />
+                            <FaUser  className='Login-icons' />
+                        </div>
+                        <div className="input-box animation">
+                            <input type="email" required />
+                            <label for="">Email</label>
+                            <MdEmail className='Login-icons' />
                         </div>
                         <div className="input-box animation">
                             <input type="text" required />
@@ -56,8 +63,8 @@ const Login = () => {
                         <div className="input-box animation">
                             <button className='btn' type="submit">Register</button>
                         </div>
-                        <div className="regi-link animation">
-                            <p>Don't have an account <a href="#" className={loginactive ? 'SignInLink' : 'active'} onClick={handleClick} >Sign In</a> </p>
+                        <div className="regi-link animation register-action">
+                            <p>Already have an account? <a href="#" className={loginactive ? 'SignInLink' : 'active'} onClick={handleClick} >Log In</a> </p>
                         </div>
                     </form>
                 </div>
