@@ -313,8 +313,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* margin-left: 30px; */
+    /* justify-content: center; */
+    margin-left: 70px;
   }
 
   .media-form{
@@ -324,7 +324,7 @@ body {
   }
 
   .login-action{
-    margin-left: 35px;
+    margin-left: px;
     margin-bottom: 5px;
   }
 
