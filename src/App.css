@@ -268,7 +268,7 @@ body {
 
 @media screen and (min-width: 100px) and (max-width: 401px) {
   .cantainer {
-    width: 280px;
+    width: 300px;
   }
 
   .cantainer .curved-shape {
@@ -304,17 +304,16 @@ body {
   .media-decoration{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 10px;
   }
   
   .media-login-action{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    margin-left: 70px;
+    align-items: flex-start;
+    margin-left: 20px;
   }
 
   .media-form{
@@ -324,7 +323,7 @@ body {
   }
 
   .login-action{
-    margin-left: px;
+    margin-left: 45px;
     margin-bottom: 5px;
   }
 
