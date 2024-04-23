@@ -161,10 +161,12 @@ body {
 
 }
 
-.regi-link a {
+.regi-link button{
   text-decoration: none;
   color: #FFA500;
   font-weight: 600;
+  border: none;
+  background-color: #25252b;
 }
 
 .regi-link a:hover {
@@ -268,7 +270,12 @@ body {
 
 @media screen and (min-width: 100px) and (max-width: 401px) {
   .cantainer {
-    width: 300px;
+    width: 350px;
+    height: 500px;
+  }
+
+  .cantainer .form-box {
+    width: 60%;
   }
 
   .cantainer .curved-shape {
@@ -292,40 +299,42 @@ body {
   }
 
   .form-box .input-box {
-    width: 175%;
-    height: 30px;
-    margin-top: 20px;
+    width: 150%;
+    height: 40px;
+    margin-top: 24px;
   }
 
   .regi-link {
-    margin: 20px 0 10px 17px;
+    margin: 30px 0 10px 0px;
   }
 
-  .media-decoration{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin-right: 10px;
-  }
-  
-  .media-login-action{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px;
+  .form-box.Login {
+    left: 20px;
   }
 
-  .media-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .form-box.Register {
+    right: 20px;
+    padding: 0 50px;
   }
 
-  .login-action{
-    margin-left: 45px;
-    margin-bottom: 5px;
+
+  .form-box.Login .animation {
+    transform: translateX(0%);
   }
+
+  .cantainer.active .form-box.Login .animation {
+    transform: translateX(-200%);
+  }
+
+  .form-box.Register .animation {
+    transform: translateX(-150%);
+  }
+
+  .cantainer.active .form-box.Register .animation {
+    transform: translateX(0%);
+
+  }
+
 
 }
 
