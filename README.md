@@ -44,7 +44,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 <code>
-  git clone https://github.com/Aryan9901/AIR_QUALITY_MANAGEMENT_SOFTWARES.git
+  git clone https://github.com/dhruvsaboo1805/1-project-nexus.git
 </code>
 
 
