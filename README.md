@@ -3,6 +3,10 @@
 This project is a simple web application featuring a login and signup page built using React.js. 
 It provides users with the ability to log in to an existing account or sign up for a new one.
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo](https://1-project-nexus.vercel.app/) 
+
 ### Tech Stack <a name="tech-stack"></a>
 
   <summary>Front-End</summary>
@@ -57,9 +61,7 @@ Coming soon
 
 ### Deployment <a name="deployment"></a>
 
-You can deploy this project using: GitHub Pages or render
-
-
+You can deploy this project using: GitHub Pages or render or vercel or netlify
 
 
 ### Contributing
